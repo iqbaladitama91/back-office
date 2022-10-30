@@ -15,12 +15,12 @@ const routes: Routes = [
     component: EmployeeListComponent
   },
   {
-    path: 'employee-list/:id',
-    component: EmployeeDetailComponent
+    path: 'employee-list/add',
+    component: CreateEmployeeComponent
   },
   {
-    path: 'employee-list/create',
-    component: CreateEmployeeComponent
+    path: 'employee-list/:id',
+    component: EmployeeDetailComponent
   },
   {
     path: '',
