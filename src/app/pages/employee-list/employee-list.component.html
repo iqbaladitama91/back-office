@@ -1,10 +1,14 @@
 <div class="container">
-  <div class="row justify-content-center align-items-center mh-100">
+  <div class="d-flex mt-5 mb-3">
+    <button class="btn btn-success" routerLink="/employee-list/add">
+      Add Employee
+    </button>
+  </div>
+  <div class="row justify-content-center align-items-center">
     <div class="col-sm-10 col-lg-12 card p-4">
       <div class="bg-light">
-        <div class="row">
-          <div class="col-6">
-            <div class="d-flex">
+        <div class="d-flex input-group">
+            
               <input
                 class="form-control me-2"
                 type="search"
@@ -17,55 +21,66 @@
                 placeholder="input group"
                 [(ngModel)]="group"
               />
-            </div>
-          </div>
-          <div class="d-flex">
-            <button class="btn btn-success" (click)="search()">Search</button>
-            <button class="btn btn-danger" (click)="reset()">
+            
+          
+            <button class="btn btn-outline-success mx-3" (click)="search()">Search</button>
+            <button class="btn btn-outline-danger" (click)="reset()">
               Reset Filter
             </button>
-          </div>
+          
         </div>
       </div>
-      <table class="table">
-        <thead>
-          <tr>
-            <th (click)="sort('id')" scope="col">
-              Email <i class="fa fa-sort"></i>
-            </th>
-            <th scope="col">Birt Date</th>
-            <th (click)="sort('id')" scope="col">Basic Salary</th>
-            <th scope="col">Group</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr
-            *ngFor="
-              let item of employeeList
-                | orderBy: key:reverse
-                | paginate: { itemsPerPage: itemPerPage, currentPage: p }
-            "
-          >
-            <td>{{ item.email }}</td>
-            <td>{{ item.birtDate }}</td>
-            <td>{{ item.basicSalary }}</td>
-            <td>{{ item.group }}</td>
-          </tr>
-        </tbody>
-        <div class="d-flex">
-          <pagination-controls (pageChange)="p = $event"></pagination-controls>
-          <label>Item Per Page</label>
-          <select
-            class="form-select form-select-sm mb-3"
-            style="height: 32px; width: 5rem"
-            [(ngModel)]="itemPerPage"
-          >
-            <option *ngFor="let item of optionPerPageList" value="{{ item }}">
-              {{ item }}
-            </option>
-          </select>
-        </div>
-      </table>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Employee Name</th>
+              <th (click)="sort('id')" scope="col">
+                Email <i class="fa fa-sort"></i>
+              </th>
+              <th scope="col">Birt Date</th>
+              <th (click)="sort('id')" scope="col">Basic Salary</th>
+              <th scope="col">Group</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              *ngFor="
+                let item of employeeList
+                  | orderBy: key:reverse
+                  | paginate: { itemsPerPage: itemPerPage, currentPage: p }
+              "
+            >
+              <td>{{ item.firstName + " " + item.lastName }}</td>
+              <td>{{ item.email }}</td>
+              <td>{{ item.birtDate }}</td>
+              <td>{{ item.basicSalary }}</td>
+              <td>{{ item.group }}</td>
+              <td>
+                <div class="d-flex">
+                  <button class="btn btn-info">Detail</button>
+                  <button class="btn btn-warning mx-3" (click)="edit()">Edit</button>
+                  <button class="btn btn-danger" (click)="delete()">Delete</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+          <div class="d-flex">
+            <label>Item Per Page</label>
+            <select
+              class="form-select form-select-sm mb-3"
+              style="height: 32px; width: 5rem"
+              [(ngModel)]="itemPerPage"
+            >
+              <option *ngFor="let item of optionPerPageList" value="{{ item }}">
+                {{ item }}
+              </option>
+            </select>
+            <pagination-controls (pageChange)="p = $event"></pagination-controls>
+          </div>
+        </table>
+      </div>
     </div>
   </div>
 </div>
