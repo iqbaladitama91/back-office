@@ -6,26 +6,28 @@
             <label for="exampleInputEmail1" class="form-label">Username</label>
             <input
               class="form-control"
+              [ngClass]="{'is-invalid' : isSubmited && error.usernameError}"
               id="exampleInputEmail1"
               [required]="true"
               [(ngModel)]="username"
-              (change)="onChangeUsername(login)"
+              (ngModelChange)="onChangeUsername(login)"
               name="username"
             />
-          <label *ngIf="usernameError && isSubmited" class="text-danger mt-1">{{errUsernameMsg}}</label>
+          <label *ngIf="error.usernameError && isSubmited" class="text-danger mt-1">{{errMsg.errUsernameMsg}}</label>
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Password</label>
           <input
             type="password"
             class="form-control"
+            [ngClass]="{'is-invalid' : isSubmited && error.passwordError}"
             id="exampleInputPassword1"
             [required]="true"
-            (change)="onChangePassword(login)"
+            (ngModelChange)="onChangePassword(login)"
             [(ngModel)]="password"
             name="password"
           />
-          <label *ngIf="passwordError && isSubmited" class="text-danger mt-1">{{errPasswordMsg}}</label>
+          <label *ngIf="error.passwordError && isSubmited" class="text-danger mt-1">{{errMsg.errPasswordMsg}}</label>
         </div>
         <button type="submit" class="btn btn-primary">Login</button>
       </div>
