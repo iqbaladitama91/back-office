@@ -1,3 +1,6 @@
+# First Setup
+After downloading this repo the first thing to do is to install the required modules with `npm install`
+
 # BackofficeApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.7.
