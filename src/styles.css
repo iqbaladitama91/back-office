@@ -1,10 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
 
 .mh-100 {
-    height: 100vh;
+    min-height: 100vh;
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.login-body{
+    background-image: url(https://img.freepik.com/premium-photo/dark-tone-office-workplace-wooden-work-desk-with-laptop-documents-modern-interior-cozy-cabinet-comfortable-workspace-workplace-with-computer-home_44344-3180.jpg?w=2000);
+    background-position: center;
+    background-repeat: repeat;
+    background-size:contain;
+}
+
+.login-card{
+    background-color: rgba(255, 255, 255, 0.8) !important
+}
+
+.bg-custom-green {
+    background-color: #82CD47 !important
+}
+
+.bg-custom-green:hover {
+    background-color: #6d944e !
+}
+
+.bg-nav{
+    background-color: #4b7829 !important
+}
 
 
 /* Chrome, Safari, Edge, Opera */
@@ -12,4 +35,13 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.glass {
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(255,255,255,0.37);
 }
