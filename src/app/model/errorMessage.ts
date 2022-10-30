@@ -5,8 +5,8 @@ export class ErrorMessage {
   errLastNameMsg: string = ''
   errEmailMsg: string = ''
   errBirtDateMsg: string = ''
-  errBasicSalary: string = ''
-  errStatus: string = ''
-  errGroup: string = ''
-  errDescription: string = ''
+  errBasicSalaryMsg: string = ''
+  errStatusMsg: string = ''
+  errGroupMsg: string = ''
+  errDescriptionMsg: string = ''
 }
