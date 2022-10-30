@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
 
     if (errUsername === null && username.length < 5) {
       this.error.usernameError = true;
-      this.errMsg.errUsernameMsg = 'Username Minimal 5 Karakter';
+      this.errMsg.errUsernameMsg = 'Username Minimum 5 Characters';
     } else {
       this.error.usernameError = false;
       this.errMsg.errUsernameMsg = '';
@@ -41,7 +41,7 @@ export class LoginComponent implements OnInit {
 
     if (errPassword === null && password.length < 5) {
       this.error.passwordError = true;
-      this.errMsg.errPasswordMsg = 'Password Minimal 5 Karakter';
+      this.errMsg.errPasswordMsg = 'Password Minimum 5 Characters';
     } else {
       this.error.passwordError = false;
       this.errMsg.errPasswordMsg = '';
@@ -55,12 +55,12 @@ export class LoginComponent implements OnInit {
 
     if (errUsername !== null) {
       this.error.usernameError = true;
-      this.errMsg.errUsernameMsg = 'Username Wajib Di Isi!!';
+      this.errMsg.errUsernameMsg = 'Username Is Required!!';
     }
 
     if (errPassword !== null) {
       this.error.passwordError = true;
-      this.errMsg.errPasswordMsg = 'Password Wajib Di Isi!';
+      this.errMsg.errPasswordMsg = 'Password Is Required!!';
     }
 
     if (
@@ -68,7 +68,7 @@ export class LoginComponent implements OnInit {
       !errUsername &&
       !errPassword
     ) {
-      this.toast.error('Username atau Password Salah');
+      this.toast.error('Username or Password is Wrong');
     }
 
     if ((this.username && this.password) === 'admin') {
