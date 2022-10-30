@@ -30,6 +30,7 @@ export class EmployeeDetailComponent implements OnInit, OnDestroy {
     const parsedId = parseInt(id);
     const index = this.employeeList.map((el) => el.id).indexOf(parsedId);
     this.employee = this.employeeList[index];
+    
     this.formattedSalary = formatter.commaAmount(this.employee.basicSalary);
   }
   ngOnDestroy(): void {

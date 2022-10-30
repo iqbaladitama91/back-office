@@ -1,187 +1,241 @@
-<form #create="ngForm" (ngSubmit)="submit(create)">
-  <div class="container">
-    <div class="row justify-content-center align-items-center mh-100">
-      <div class="col-sm-10 col-lg-6 card p-4">
-        <div class="row mb-3">
-          <div class="col-6">
-            <label for="firstName" class="form-label"
-              ><span class="text-danger">*</span>First Name</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              [ngClass]="{'is-invalid' : isSubmited && error.firstNameError}"
-              [required]="true"
-              [(ngModel)]="employee.firstName"
-              (ngModelChange)="onChangeFirstName(create.value.firstName)"
-              name="firstName"
-            />
-            <label *ngIf="isSubmited && error.firstNameError" class="text-danger mt-1">{{
-                errMsg.errFirstNameMsg
-              }}</label>
-          </div>
-          <div class="col-6">
-            <label for="lastName" class="form-label"><span class="text-danger">*</span>Last Name</label>
-            <input
-              type="text"
-              class="form-control"
-              [ngClass]="{'is-invalid' : isSubmited && error.lastNameError}"
-              [required]="true"
-              [(ngModel)]="employee.lastName"
-              (ngModelChange)="onChangeLastName(create.value.lastName)"
-              name="lastName"
-            />
-            <label *ngIf="isSubmited && error.lastNameError" class="text-danger mt-1">{{
-                errMsg.errLastNameMsg
-              }}</label>
-          </div>
-        </div>
-        <div class="mb-3">
-            <label for="username" class="form-label"><span class="text-danger">*</span>Username</label>
-            <input
-              type="email"
-              class="form-control"
-              [ngClass]="{'is-invalid' : isSubmited && error.usernameError}"
-              [required]="true"
-              [(ngModel)]="employee.username"
-              (ngModelChange)="onChangeUsername(create.value.username)"
-              name="username"
-            />    
-            <label *ngIf="isSubmited && error.usernameError" class="text-danger mt-1">{{
-                errMsg.errUsernameMsg
-              }}</label>     
-          </div>
-        <div class="mb-3">
-          <label for="email" class="form-label"><span class="text-danger">*</span>Email</label>
-          <input
-            type="email"
-            class="form-control"
-            [ngClass]="{'is-invalid' : isSubmited && error.emailError}"
-            [required]="true"
-            [(ngModel)]="employee.email"
-            (ngModelChange)="onChangeEmail(create.value.email)"
-            name="email"
-          />
-          <label *ngIf="isSubmited && error.emailError" class="text-danger mt-1">{{
-            errMsg.errEmailMsg
-          }}</label>
-        </div>
-        <div class="row mb-3">
-          <div class="col-6">
-            <label for="birtDate" class="form-label"><span class="text-danger">*</span>Birt Date</label>
-            <input
-              type="date"
-              class="form-control"
-              [ngClass]="{'is-invalid' : isSubmited && error.birtDateError}"
-              [required]="true"
-              [(ngModel)]="employee.birtDate"
-              (ngModelChange)="onChangeBirtDate(create.value.birtDate)"
-              [max]="currentDate"
-              name="birtDate"
-            />
-            <label *ngIf="error.birtDateError" class="text-danger mt-1">{{
-                errMsg.errBirtDateMsg
-              }}</label>
-          </div>
-          <div class="col-6">
-            <label for="basicSalary" class="form-label"
-              ><span class="text-danger">*</span>Basic Salary</label
-            >
-            <div class="input-group">
-              <span class="input-group-text">Rp</span>
-              <input
-                type="string"
-                class="form-control"
-                [ngClass]="{'is-invalid' : isSubmited && error.basicSalaryError}"
-                [required]="true"
-                name="basicSalary"                
-                [(ngModel)]="employee.basicSalary"
-                (ngModelChange)="onChangeBasicSalary(create.value.basicSalary)"
-              />             
+<app-navbar></app-navbar>
+<div class="login-body">
+  <div class="glass">
+    <form #create="ngForm" (ngSubmit)="submit(create)">
+      <div class="container">
+        <div class="row justify-content-center align-items-center mh-100">
+          <div class="col-sm-10 col-lg-6 card m-5 login-card p-4">
+            <div class="row mb-3">
+                <h2 class="text-center mb-5">Add Employee Form</h2>
+              <div class="col-12 col-sm-12 col-md-6">
+                <label for="firstName" class="form-label fw-semibold"
+                  ><span class="text-danger">*</span>First Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  [ngClass]="{
+                    'is-invalid': isSubmited && error.firstNameError
+                  }"
+                  [required]="true"
+                  [(ngModel)]="employee.firstName"
+                  (ngModelChange)="onChangeFirstName(create.value.firstName)"
+                  name="firstName"
+                />
+                <label
+                  *ngIf="isSubmited && error.firstNameError"
+                  class="text-danger mt-1"
+                  >{{ errMsg.errFirstNameMsg }}</label
+                >
+              </div>
+              <div class="col-12 col-sm-12 col-md-6">
+                <label for="lastName" class="form-label fw-semibold"
+                  ><span class="text-danger">*</span>Last Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  [ngClass]="{
+                    'is-invalid': isSubmited && error.lastNameError
+                  }"
+                  [required]="true"
+                  [(ngModel)]="employee.lastName"
+                  (ngModelChange)="onChangeLastName(create.value.lastName)"
+                  name="lastName"
+                />
+                <label
+                  *ngIf="isSubmited && error.lastNameError"
+                  class="text-danger mt-1"
+                  >{{ errMsg.errLastNameMsg }}</label
+                >
+              </div>
             </div>
-            <label *ngIf="error.basicSalaryError" class="text-danger mt-1">{{
-                errMsg.errBasicSalaryMsg
-              }}</label>
-          </div>
-        </div>
-
-        <div class="row mb-3">
-          <div class="col-6">
-            <label class="form-label"><span class="text-danger">*</span>Status</label>
-            <input
-              type="text"
-              class="form-control"
-              [ngClass]="{'is-invalid' : isSubmited && error.statusError}"
-              [(ngModel)]="employee.status"
-              (ngModelChange)="onChangeStatus(create.value.status)"
-              name="status"
-            />
-            <label *ngIf="error.statusError" class="text-danger mt-1">{{
-                errMsg.errStatusMsg
-              }}</label>
-          </div>
-          <div class="col-6">
-            <label class="form-label"><span class="text-danger">*</span>Group</label>
-            <div class="dropdown-center">
-              <button
-                [ngClass]="(isSubmited && error.groupError) ? 'form-control is-invalid dropdown-toggle' : 'form-control dropdown-toggle'"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+            <div class="mb-3">
+              <label for="username" class="form-label fw-semibold"
+                ><span class="text-danger">*</span>Username</label
               >
-                {{ buttonLabel }}
-              </button>
-              <ul class="dropdown-menu">
-                <li class="container">
-                  <input
-                    type="text"
-                    name="searchGroup"
-                    class="form-control"
-                    placeholder="Search Group"
-                    [(ngModel)]="group"
-                    (ngModelChange)="searchGroup(group)"
-                  />
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    *ngFor="let item of groupList"
-                    (click)="select(item.group)"
-                    >{{ item.group }}</a
-                  >
-                </li>
-              </ul>
+              <input
+                type="email"
+                class="form-control"
+                [ngClass]="{ 'is-invalid': isSubmited && error.usernameError }"
+                [required]="true"
+                [(ngModel)]="employee.username"
+                (ngModelChange)="onChangeUsername(create.value.username)"
+                name="username"
+              />
+              <label
+                *ngIf="isSubmited && error.usernameError"
+                class="text-danger mt-1"
+                >{{ errMsg.errUsernameMsg }}</label
+              >
             </div>
-            <label *ngIf="error.groupError && isSubmited" class="text-danger mt-1">{{
-              errMsg.errGroupMsg
-            }}</label>
+            <div class="mb-3">
+              <label for="email" class="form-label fw-semibold"
+                ><span class="text-danger">*</span>Email</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                [ngClass]="{ 'is-invalid': isSubmited && error.emailError }"
+                [required]="true"
+                [(ngModel)]="employee.email"
+                (ngModelChange)="onChangeEmail(create.value.email)"
+                name="email"
+              />
+              <label
+                *ngIf="isSubmited && error.emailError"
+                class="text-danger mt-1"
+                >{{ errMsg.errEmailMsg }}</label
+              >
+            </div>
+            <div class="row mb-3">
+              <div class="col-12 col-sm-12 col-md-6">
+                <label for="birtDate" class="form-label fw-semibold"
+                  ><span class="text-danger">*</span>Birt Date</label
+                >
+                <input
+                  type="date"
+                  class="form-control"
+                  [ngClass]="{
+                    'is-invalid': isSubmited && error.birtDateError
+                  }"
+                  [required]="true"
+                  [(ngModel)]="employee.birtDate"
+                  (ngModelChange)="onChangeBirtDate(create.value.birtDate)"
+                  [max]="currentDate"
+                  name="birtDate"
+                />
+                <label *ngIf="error.birtDateError" class="text-danger mt-1">{{
+                  errMsg.errBirtDateMsg
+                }}</label>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6">
+                <label for="basicSalary" class="form-label fw-semibold"
+                  ><span class="text-danger">*</span>Basic Salary</label
+                >
+                <div class="input-group">
+                  <span class="input-group-text">Rp</span>
+                  <input
+                    type="number"
+                    class="form-control"
+                    [ngClass]="{
+                      'is-invalid': isSubmited && error.basicSalaryError
+                    }"
+                    [required]="true"
+                    name="basicSalary"
+                    [(ngModel)]="employee.basicSalary"
+                    (ngModelChange)="
+                      onChangeBasicSalary(create.value.basicSalary)
+                    "
+                  />
+                </div>
+                <label
+                  *ngIf="error.basicSalaryError"
+                  class="text-danger mt-1"
+                  >{{ errMsg.errBasicSalaryMsg }}</label
+                >
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-12 col-sm-12 col-md-6">
+                <label class="form-label fw-semibold"
+                  ><span class="text-danger">*</span>Status</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  [ngClass]="{ 'is-invalid': isSubmited && error.statusError }"
+                  [(ngModel)]="employee.status"
+                  (ngModelChange)="onChangeStatus(create.value.status)"
+                  name="status"
+                />
+                <label *ngIf="error.statusError" class="text-danger mt-1">{{
+                  errMsg.errStatusMsg
+                }}</label>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6">
+                <label class="form-label fw-semibold"
+                  ><span class="text-danger">*</span>Group</label
+                >
+                <div class="dropdown-center">
+                  <button
+                    [ngClass]="
+                      isSubmited && error.groupError
+                        ? 'form-control is-invalid dropdown-toggle'
+                        : 'form-control dropdown-toggle'
+                    "
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    {{ buttonLabel }}
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li class="container">
+                      <input
+                        type="text"
+                        name="searchGroup"
+                        class="form-control"
+                        placeholder="Search Group"
+                        [(ngModel)]="group"
+                        (ngModelChange)="searchGroup(group)"
+                      />
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        *ngFor="let item of groupList"
+                        (click)="select(item.group)"
+                        >{{ item.group }}</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <label
+                  *ngIf="error.groupError && isSubmited"
+                  class="text-danger mt-1"
+                  >{{ errMsg.errGroupMsg }}</label
+                >
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label fw-semibold"
+                ><span class="text-danger">*</span>Description</label
+              >
+              <input
+                type="date"
+                class="form-control"
+                [ngClass]="{
+                  'is-invalid': isSubmited && error.descriptionError
+                }"
+                [required]="true"
+                [(ngModel)]="employee.description"
+                (ngModelChange)="onChangeDescription(create.value.description)"
+                name="description"
+              />
+              <label
+                *ngIf="error.descriptionError && isSubmited"
+                class="text-danger mt-1"
+                >{{ errMsg.errDescriptionMsg }}</label
+              >
+            </div>
+            <div class="row mt-3">
+                <div class="col-6">
+                    <button
+                class="btn btn-secondary form-control"
+                routerLink="/employee-list"
+              >
+                <b>Cancel</b>
+              </button>
+                </div>
+                <div class="col-6">
+                    <button type="submit" class="btn bg-success form-control text-light"><b>Save</b></button>
+                </div>                                        
+            </div>
           </div>
-        </div>
-        <div class="mb-3">
-            <label class="form-label"><span class="text-danger">*</span>Description</label>
-            <input
-              type="date"
-              class="form-control"
-              [ngClass]="{'is-invalid' : isSubmited && error.descriptionError}"
-              [required]="true"
-              [(ngModel)]="employee.description"
-              (ngModelChange)="onChangeDescription(create.value.description)"
-              name="description"
-            />
-            <label *ngIf="error.descriptionError && isSubmited" class="text-danger mt-1">{{
-                errMsg.errDescriptionMsg
-              }}</label>
-        </div>
-        <div class="d-flex mt-3">
-          <button
-            class="btn btn-secondary px-3 py-1"
-            routerLink="/employee-list"
-          >
-            Cancel
-          </button>
-          <button type="submit" class="btn btn-primary mx-3 px-3">Save</button>
         </div>
       </div>
-    </div>
+    </form>
   </div>
-</form>
+</div>

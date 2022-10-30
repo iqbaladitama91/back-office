@@ -231,6 +231,7 @@ export class CreateEmployeeComponent implements OnInit {
     
     if(val.valid && !this.error.groupError) {
       this.toast.success("Success Add Employee")
+      this.router.navigateByUrl("/employee-list")
     }
   }
 }

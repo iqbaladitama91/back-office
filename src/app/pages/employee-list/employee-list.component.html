@@ -1,33 +1,33 @@
+<app-navbar></app-navbar>
 <div class="container">
   <div class="d-flex mt-5 mb-3">
     <button class="btn btn-success" routerLink="/employee-list/add">
-      Add Employee
+      <b>Add Employee</b>
     </button>
   </div>
   <div class="row justify-content-center align-items-center">
     <div class="col-sm-10 col-lg-12 card p-4">
       <div class="bg-light">
         <div class="d-flex input-group">
-            
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="input email"
-                [(ngModel)]="email"
-              />
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="input group"
-                [(ngModel)]="group"
-              />
-            
-          
-            <button class="btn btn-outline-success mx-3" (click)="search()">Search</button>
-            <button class="btn btn-outline-danger" (click)="reset()">
-              Reset Filter
-            </button>
-          
+          <input
+            [ngClass]="err.emailError ? 'form-control is-invalid me-2' : 'form-control me-2'"
+            type="search"
+            [placeholder]="errMsg.errEmailMsg"
+            [(ngModel)]="email"
+          />
+          <input
+          [ngClass]="err.groupError ? 'form-control is-invalid me-2' : 'form-control me-2'"
+            type="search"
+            [placeholder]="errMsg.errGroupMsg"
+            [(ngModel)]="group"
+          />
+
+          <button class="btn btn-outline-success mx-3" (click)="search()">
+            Search
+          </button>
+          <button class="btn btn-outline-danger" (click)="reset()">
+            Reset Filter
+          </button>
         </div>
       </div>
       <div class="table-responsive">
@@ -59,27 +59,43 @@
               <td>{{ item.group }}</td>
               <td>
                 <div class="d-flex">
-                  <button class="btn btn-info" (click)="goToDetail(item.id)">Detail</button>
-                  <button class="btn btn-warning mx-3" (click)="edit()">Edit</button>
-                  <button class="btn btn-danger" (click)="delete()">Delete</button>
+                  <button class="btn btn-info fw-semibold text-light" (click)="goToDetail(item.id)">
+                    Detail
+                  </button>
+                  <button class="btn btn-warning fw-semibold text-light mx-3" (click)="edit()">
+                    Edit
+                  </button>
+                  <button class="btn fw-semibold btn-danger" (click)="delete()">
+                    Delete
+                  </button>
                 </div>
               </td>
-            </tr>
-          </tbody>
-          <div class="d-flex">
-            <label>Item Per Page</label>
-            <select
-              class="form-select form-select-sm mb-3"
-              style="height: 32px; width: 5rem"
-              [(ngModel)]="itemPerPage"
-            >
-              <option *ngFor="let item of optionPerPageList" value="{{ item }}">
-                {{ item }}
-              </option>
-            </select>
-            <pagination-controls (pageChange)="p = $event"></pagination-controls>
-          </div>
+            </tr>           
+          </tbody>          
         </table>
+        <div class="row input-group">
+          <div class="col-3">
+            <div class="d-flex justify-content-center align-items-center">
+              <label>Item Per Page</label>
+              <select
+                class="form-select form-select-sm mx-2"
+                style="height: 32px; width: 3.5rem"
+                [(ngModel)]="itemPerPage"
+              >
+                <option *ngFor="let item of optionPerPageList" value="{{ item }}">
+                  {{ item }}
+                </option>
+              </select>
+            </div>          
+          </div>
+          <div class="col-6">
+            <pagination-controls
+            (pageChange)="p = $event"
+          ></pagination-controls>
+          </div>
+         
+      
+        </div>
       </div>
     </div>
   </div>
