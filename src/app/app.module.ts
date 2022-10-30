@@ -11,6 +11,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
 import { EmployeeListComponent } from './pages/employee-list/employee-list.component';
+import { CreateEmployeeComponent } from './pages/create-employee/create-employee.component';
+import { EmployeeDetailComponent } from './pages/employee-detail/employee-detail.component';
 
 
 
@@ -18,7 +20,9 @@ import { EmployeeListComponent } from './pages/employee-list/employee-list.compo
   declarations: [
     AppComponent,
     LoginComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    CreateEmployeeComponent,
+    EmployeeDetailComponent
   ],
   imports: [
     BrowserModule,
