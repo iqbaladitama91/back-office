@@ -13,6 +13,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { EmployeeListComponent } from './pages/employee-list/employee-list.component';
 import { CreateEmployeeComponent } from './pages/create-employee/create-employee.component';
 import { EmployeeDetailComponent } from './pages/employee-detail/employee-detail.component';
+import { NavbarComponent } from './component/navbar/navbar.component';
 
 
 
@@ -22,7 +23,8 @@ import { EmployeeDetailComponent } from './pages/employee-detail/employee-detail
     LoginComponent,
     EmployeeListComponent,
     CreateEmployeeComponent,
-    EmployeeDetailComponent
+    EmployeeDetailComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
