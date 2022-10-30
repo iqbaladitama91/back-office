@@ -23,10 +23,7 @@ export class EmployeeListComponent implements OnInit {
 
   constructor(private router : Router, private toast: ToastrService) { }
 
-  ngOnInit(): void {  
-    console.log(this.employeeList);
-      
-  }
+  ngOnInit(): void {}
 
   search(): void {
     const email = this.email
@@ -41,6 +38,10 @@ export class EmployeeListComponent implements OnInit {
       
       this.employeeList = data
     }
+  }
+
+  goToDetail(id: any) :void {
+    this.router.navigateByUrl(`/employee-list/${id}`)
   }
   reset(): void {
     this.employeeList = data

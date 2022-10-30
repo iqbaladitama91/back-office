@@ -59,7 +59,7 @@
               <td>{{ item.group }}</td>
               <td>
                 <div class="d-flex">
-                  <button class="btn btn-info">Detail</button>
+                  <button class="btn btn-info" (click)="goToDetail(item.id)">Detail</button>
                   <button class="btn btn-warning mx-3" (click)="edit()">Edit</button>
                   <button class="btn btn-danger" (click)="delete()">Delete</button>
                 </div>
