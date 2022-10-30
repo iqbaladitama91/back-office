@@ -1,0 +1,603 @@
+[
+    {
+      "email": "mnajera0@gmail.com",
+      "basicSalary": 50924,
+      "birtDate": "11-9-2021",
+      "group": "Consumer Services"
+    },
+    {
+      "email": "mmurfill1@gmail.com",
+      "basicSalary": 1207619,
+      "birtDate": "11-15-2021",
+      "group": "Basic Industries"
+    },
+    {
+      "email": "hweatherhead2@gmail.com",
+      "basicSalary": 2032915,
+      "birtDate": "1-5-2022",
+      "group": "n-a"
+    },
+    {
+      "email": "ktodarello3@gmail.com",
+      "basicSalary": 1048721,
+      "birtDate": "12-12-2021",
+      "group": "n-a"
+    },
+    {
+      "email": "cmogra4@gmail.com",
+      "basicSalary": 3671187,
+      "birtDate": "12-30-2021",
+      "group": "Consumer Non-Durables"
+    },
+    {
+      "email": "aoki5@gmail.com",
+      "basicSalary": 4195999,
+      "birtDate": "3-21-2022",
+      "group": "Consumer Services"
+    },
+    {
+      "email": "tmitie6@gmail.com",
+      "basicSalary": 1655405,
+      "birtDate": "1-5-2022",
+      "group": "Health Care"
+    },
+    {
+      "email": "bspieck7@economist.com",
+      "basicSalary": 1844316,
+      "birtDate": "3-18-2022",
+      "group": "n-a"
+    },
+    {
+      "email": "jmcgrill8@yolasite.com",
+      "basicSalary": 1157663,
+      "birtDate": "7-22-2022",
+      "group": "Miscellaneous"
+    },
+    {
+      "email": "nbaitman9@mozilla.org",
+      "basicSalary": 4495894,
+      "birtDate": "8-19-2022",
+      "group": "n-a"
+    },
+    {
+      "email": "cchurchera@pbs.org",
+      "basicSalary": 3593709,
+      "birtDate": "6-23-2022",
+      "group": "n-a"
+    },
+    {
+      "email": "vkleinbererb@ibm.com",
+      "basicSalary": 4073124,
+      "birtDate": "6-20-2022",
+      "group": "Capital Goods"
+    },
+    {
+      "email": "tjovicc@slashdot.org",
+      "basicSalary": 3741881,
+      "birtDate": "5-6-2022",
+      "group": "Basic Industries"
+    },
+    {
+      "email": "schesseld@wp.com",
+      "basicSalary": 1634265,
+      "birtDate": "12-8-2021",
+      "group": "Health Care"
+    },
+    {
+      "email": "bhyname@reverbnation.com",
+      "basicSalary": 1331825,
+      "birtDate": "5-24-2022",
+      "group": "Consumer Services"
+    },
+    {
+      "email": "mfarnesf@answers.com",
+      "basicSalary": 4499807,
+      "birtDate": "8-23-2022",
+      "group": "Consumer Services"
+    },
+    {
+      "email": "bteasg@lycos.com",
+      "basicSalary": 1545496,
+      "birtDate": "3-17-2022",
+      "group": "Consumer Services"
+    },
+    {
+      "email": "lsetchfieldh@barnesandnoble.com",
+      "basicSalary": 1408628,
+      "birtDate": "6-27-2022",
+      "group": "Consumer Services"
+    },
+    {
+      "email": "snysi@columbia.edu",
+      "basicSalary": 2988824,
+      "birtDate": "10-16-2022",
+      "group": "Health Care"
+    },
+    {
+      "email": "chickissonj@mozilla.com",
+      "basicSalary": 2771465,
+      "birtDate": "9-15-2022",
+      "group": "Consumer Services"
+    },
+    {
+      "email": "tschoolcroftk@trellian.com",
+      "basicSalary": 2503165,
+      "birtDate": "4-16-2022",
+      "group": "n-a"
+    },
+    {
+      "email": "rllewellynl@gnu.org",
+      "basicSalary": 3554811,
+      "birtDate": "9-30-2022",
+      "group": "Health Care"
+    },
+    {
+      "email": "cshallcrassm@cnn.com",
+      "basicSalary": 1044099,
+      "birtDate": "10-3-2022",
+      "group": "Public Utilities"
+    },
+    {
+      "email": "gadamsonn@sakura.ne.jp",
+      "basicSalary": 1995415,
+      "birtDate": "1-27-2022",
+      "group": "Health Care"
+    },
+    {
+      "email": "alermoutho@netscape.com",
+      "basicSalary": 1626867,
+      "birtDate": "1-30-2022",
+      "group": "Basic Industries"
+    },
+    {
+      "email": "nmacmenamyp@disqus.com",
+      "basicSalary": 1514927,
+      "birtDate": "12-10-2021",
+      "group": "Consumer Services"
+    },
+    {
+      "email": "pambergq@desdev.cn",
+      "basicSalary": 4756357,
+      "birtDate": "2-7-2022",
+      "group": "n-a"
+    },
+    {
+      "email": "fgrishuninr@dagondesign.com",
+      "basicSalary": 3926060,
+      "birtDate": "3-10-2022",
+      "group": "Consumer Non-Durables"
+    },
+    {
+      "email": "fpellews@scientificamerican.com",
+      "basicSalary": 2445436,
+      "birtDate": "4-26-2022",
+      "group": "Consumer Durables"
+    },
+    {
+      "email": "jouthwaitet@pen.io",
+      "basicSalary": 4611845,
+      "birtDate": "12-4-2021",
+      "group": "n-a"
+    },
+    {
+      "email": "fracku@sfgate.com",
+      "basicSalary": 4517335,
+      "birtDate": "10-29-2022",
+      "group": "Consumer Services"
+    },
+    {
+      "email": "wburnsidev@dagondesign.com",
+      "basicSalary": 4789659,
+      "birtDate": "5-31-2022",
+      "group": "n-a"
+    },
+    {
+      "email": "kcunniffew@angelfire.com",
+      "basicSalary": 2637935,
+      "birtDate": "4-4-2022",
+      "group": "Miscellaneous"
+    },
+    {
+      "email": "ijillardx@bloomberg.com",
+      "basicSalary": 3848613,
+      "birtDate": "9-21-2022",
+      "group": "Transportation"
+    },
+    {
+      "email": "lsigarty@home.pl",
+      "basicSalary": 1927163,
+      "birtDate": "2-4-2022",
+      "group": "Technology"
+    },
+    {
+      "email": "tsysonz@youku.com",
+      "basicSalary": 2699725,
+      "birtDate": "11-23-2021",
+      "group": "Consumer Non-Durables"
+    },
+    {
+      "email": "ddoiley10@addtoany.com",
+      "basicSalary": 4244756,
+      "birtDate": "1-7-2022",
+      "group": "n-a"
+    },
+    {
+      "email": "aveillard11@hibu.com",
+      "basicSalary": 2694579,
+      "birtDate": "2-6-2022",
+      "group": "Technology"
+    },
+    {
+      "email": "byepiskov12@hp.com",
+      "basicSalary": 3601900,
+      "birtDate": "5-18-2022",
+      "group": "Consumer Services"
+    },
+    {
+      "email": "kloan13@nytimes.com",
+      "basicSalary": 1170157,
+      "birtDate": "6-28-2022",
+      "group": "Finance"
+    },
+    {
+      "email": "aaicheson14@cdbaby.com",
+      "basicSalary": 1378086,
+      "birtDate": "8-1-2022",
+      "group": "Consumer Services"
+    },
+    {
+      "email": "dfedorski15@nsw.gov.au",
+      "basicSalary": 4374880,
+      "birtDate": "4-13-2022",
+      "group": "Finance"
+    },
+    {
+      "email": "dbrellin16@utexas.edu",
+      "basicSalary": 4084329,
+      "birtDate": "3-26-2022",
+      "group": "Consumer Services"
+    },
+    {
+      "email": "khartfleet17@rambler.ru",
+      "basicSalary": 3389672,
+      "birtDate": "10-18-2022",
+      "group": "n-a"
+    },
+    {
+      "email": "ebambra18@fema.gov",
+      "basicSalary": 4781936,
+      "birtDate": "11-9-2021",
+      "group": "Health Care"
+    },
+    {
+      "email": "afarnin19@example.com",
+      "basicSalary": 3859307,
+      "birtDate": "9-29-2022",
+      "group": "Consumer Services"
+    },
+    {
+      "email": "kbenallack1a@ed.gov",
+      "basicSalary": 2479140,
+      "birtDate": "9-11-2022",
+      "group": "n-a"
+    },
+    {
+      "email": "agolder1b@xing.com",
+      "basicSalary": 1795413,
+      "birtDate": "10-7-2022",
+      "group": "Finance"
+    },
+    {
+      "email": "atillyer1c@amazon.de",
+      "basicSalary": 2774227,
+      "birtDate": "2-11-2022",
+      "group": "Consumer Services"
+    },
+    {
+      "email": "jskinn1d@ifeng.com",
+      "basicSalary": 1881563,
+      "birtDate": "10-6-2022",
+      "group": "Finance"
+    },
+    {
+      "email": "hlippiett1e@marriott.com",
+      "basicSalary": 4298482,
+      "birtDate": "7-11-2022",
+      "group": "n-a"
+    },
+    {
+      "email": "mbanane1f@irs.gov",
+      "basicSalary": 3264332,
+      "birtDate": "8-9-2022",
+      "group": "Health Care"
+    },
+    {
+      "email": "hlampel1g@house.gov",
+      "basicSalary": 2485891,
+      "birtDate": "9-18-2022",
+      "group": "n-a"
+    },
+    {
+      "email": "amenis1h@merriam-webster.com",
+      "basicSalary": 2337815,
+      "birtDate": "7-22-2022",
+      "group": "Health Care"
+    },
+    {
+      "email": "achansonnau1i@unesco.org",
+      "basicSalary": 3006955,
+      "birtDate": "8-10-2022",
+      "group": "Consumer Services"
+    },
+    {
+      "email": "fmotte1j@csmonitor.com",
+      "basicSalary": 1812208,
+      "birtDate": "2-18-2022",
+      "group": "Finance"
+    },
+    {
+      "email": "jabramson1k@bigcartel.com",
+      "basicSalary": 3650102,
+      "birtDate": "9-6-2022",
+      "group": "Finance"
+    },
+    {
+      "email": "claurand1l@scientificamerican.com",
+      "basicSalary": 3955088,
+      "birtDate": "3-31-2022",
+      "group": "n-a"
+    },
+    {
+      "email": "nreagan1m@fc2.com",
+      "basicSalary": 3038567,
+      "birtDate": "9-23-2022",
+      "group": "Finance"
+    },
+    {
+      "email": "dbartkowiak1n@marriott.com",
+      "basicSalary": 2144739,
+      "birtDate": "1-16-2022",
+      "group": "Public Utilities"
+    },
+    {
+      "email": "eamberson1o@cbsnews.com",
+      "basicSalary": 2281427,
+      "birtDate": "3-28-2022",
+      "group": "Health Care"
+    },
+    {
+      "email": "oepp1p@canalblog.com",
+      "basicSalary": 1193325,
+      "birtDate": "11-6-2021",
+      "group": "n-a"
+    },
+    {
+      "email": "kduggary1q@newsvine.com",
+      "basicSalary": 4895083,
+      "birtDate": "9-15-2022",
+      "group": "Finance"
+    },
+    {
+      "email": "bskilton1r@ucoz.ru",
+      "basicSalary": 4942732,
+      "birtDate": "3-24-2022",
+      "group": "Finance"
+    },
+    {
+      "email": "skermannes1s@dell.com",
+      "basicSalary": 4837963,
+      "birtDate": "9-3-2022",
+      "group": "Health Care"
+    },
+    {
+      "email": "jbamlett1t@ifeng.com",
+      "basicSalary": 4792351,
+      "birtDate": "10-30-2021",
+      "group": "Public Utilities"
+    },
+    {
+      "email": "smcdool1u@edublogs.org",
+      "basicSalary": 3348089,
+      "birtDate": "11-8-2021",
+      "group": "Basic Industries"
+    },
+    {
+      "email": "ctaphouse1v@tripod.com",
+      "basicSalary": 2414872,
+      "birtDate": "6-14-2022",
+      "group": "n-a"
+    },
+    {
+      "email": "emedcalfe1w@nifty.com",
+      "basicSalary": 2903719,
+      "birtDate": "9-18-2022",
+      "group": "Finance"
+    },
+    {
+      "email": "lcoats1x@cisco.com",
+      "basicSalary": 1912980,
+      "birtDate": "6-12-2022",
+      "group": "Health Care"
+    },
+    {
+      "email": "dmyers1y@shinystat.com",
+      "basicSalary": 4431642,
+      "birtDate": "8-16-2022",
+      "group": "Finance"
+    },
+    {
+      "email": "gdrever1z@booking.com",
+      "basicSalary": 1444703,
+      "birtDate": "1-1-2022",
+      "group": "Consumer Services"
+    },
+    {
+      "email": "lbickell20@ustream.tv",
+      "basicSalary": 2701142,
+      "birtDate": "4-19-2022",
+      "group": "Energy"
+    },
+    {
+      "email": "cdeniske21@springer.com",
+      "basicSalary": 1414415,
+      "birtDate": "6-16-2022",
+      "group": "n-a"
+    },
+    {
+      "email": "lruby22@wikia.com",
+      "basicSalary": 2985821,
+      "birtDate": "9-21-2022",
+      "group": "Consumer Non-Durables"
+    },
+    {
+      "email": "sbirtwell23@nba.com",
+      "basicSalary": 3064518,
+      "birtDate": "6-7-2022",
+      "group": "n-a"
+    },
+    {
+      "email": "edimmack24@ftc.gov",
+      "basicSalary": 1529865,
+      "birtDate": "4-11-2022",
+      "group": "n-a"
+    },
+    {
+      "email": "mkinton25@google.co.uk",
+      "basicSalary": 3214274,
+      "birtDate": "11-24-2021",
+      "group": "Consumer Services"
+    },
+    {
+      "email": "dvida26@nationalgeographic.com",
+      "basicSalary": 1342060,
+      "birtDate": "9-26-2022",
+      "group": "Health Care"
+    },
+    {
+      "email": "otwoohy27@reddit.com",
+      "basicSalary": 3858860,
+      "birtDate": "8-12-2022",
+      "group": "Consumer Services"
+    },
+    {
+      "email": "lsimpson28@blogger.com",
+      "basicSalary": 4806983,
+      "birtDate": "2-27-2022",
+      "group": "Finance"
+    },
+    {
+      "email": "adewire29@seattletimes.com",
+      "basicSalary": 1120832,
+      "birtDate": "7-8-2022",
+      "group": "Public Utilities"
+    },
+    {
+      "email": "gkuban2a@facebook.com",
+      "basicSalary": 2663316,
+      "birtDate": "1-30-2022",
+      "group": "Consumer Services"
+    },
+    {
+      "email": "awillcott2b@hostgator.com",
+      "basicSalary": 3299319,
+      "birtDate": "5-20-2022",
+      "group": "n-a"
+    },
+    {
+      "email": "jthreadgold2c@time.com",
+      "basicSalary": 1674077,
+      "birtDate": "5-11-2022",
+      "group": "Basic Industries"
+    },
+    {
+      "email": "sdovey2d@ycombinator.com",
+      "basicSalary": 3093234,
+      "birtDate": "1-13-2022",
+      "group": "n-a"
+    },
+    {
+      "email": "wdanihelka2e@newsvine.com",
+      "basicSalary": 1954810,
+      "birtDate": "9-15-2022",
+      "group": "Transportation"
+    },
+    {
+      "email": "ksone2f@squidoo.com",
+      "basicSalary": 2395872,
+      "birtDate": "5-7-2022",
+      "group": "Energy"
+    },
+    {
+      "email": "epengilly2g@lycos.com",
+      "basicSalary": 4132104,
+      "birtDate": "1-5-2022",
+      "group": "n-a"
+    },
+    {
+      "email": "hodonnell2h@blogger.com",
+      "basicSalary": 4935377,
+      "birtDate": "12-8-2021",
+      "group": "Health Care"
+    },
+    {
+      "email": "kallworthy2i@chicagotribune.com",
+      "basicSalary": 2776326,
+      "birtDate": "1-20-2022",
+      "group": "Technology"
+    },
+    {
+      "email": "ashieldon2j@yolasite.com",
+      "basicSalary": 4729629,
+      "birtDate": "12-9-2021",
+      "group": "n-a"
+    },
+    {
+      "email": "jgadie2k@google.pl",
+      "basicSalary": 3381689,
+      "birtDate": "10-18-2022",
+      "group": "Technology"
+    },
+    {
+      "email": "mlobbe2l@sciencedirect.com",
+      "basicSalary": 4701098,
+      "birtDate": "1-16-2022",
+      "group": "n-a"
+    },
+    {
+      "email": "twentworth2m@odnoklassniki.ru",
+      "basicSalary": 1385292,
+      "birtDate": "1-12-2022",
+      "group": "Energy"
+    },
+    {
+      "email": "asommerlie2n@amazonaws.com",
+      "basicSalary": 1514390,
+      "birtDate": "9-14-2022",
+      "group": "Consumer Services"
+    },
+    {
+      "email": "vmakepeace2o@yale.edu",
+      "basicSalary": 3013229,
+      "birtDate": "8-3-2022",
+      "group": "n-a"
+    },
+    {
+      "email": "hdeighton2p@marriott.com",
+      "basicSalary": 4758916,
+      "birtDate": "11-15-2021",
+      "group": "Capital Goods"
+    },
+    {
+      "email": "alillie2q@mtv.com",
+      "basicSalary": 3092252,
+      "birtDate": "8-24-2022",
+      "group": "Finance"
+    },
+    {
+      "email": "nealam2r@163.com",
+      "basicSalary": 3203213,
+      "birtDate": "9-13-2022",
+      "group": "Health Care"
+    }
+  ]
+  
