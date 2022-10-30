@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import groupData from 'src/data/group.json';
 import { Group } from 'src/app/model/group';
+import { Employee } from 'src/app/model/employee';
 
 @Component({
   selector: 'app-create-employee',
@@ -10,18 +11,16 @@ import { Group } from 'src/app/model/group';
 export class CreateEmployeeComponent implements OnInit {
   groupList: Group[] = groupData;
   buttonLabel: string = 'Select Group';
+  statusOption: string[] = ["true", 'false']  
   errEmailMsg: string = '';
   emailError: boolean = false;
   currentDate!: string;
-  birtDate!: string
-  group!: string;
-  email!: string;
-  salary!: string
+  employee: Employee = new Employee();
 
   constructor() {}
 
   ngOnInit(): void {
-    this.getCurrentDate()
+    this.getCurrentDate();
   }
 
   getCurrentDate(): void {
@@ -32,15 +31,17 @@ export class CreateEmployeeComponent implements OnInit {
     const day = date.toLocaleString('default', { day: '2-digit' });
 
     const formattedDate = year + '-' + month + '-' + day;
-    this.currentDate = formattedDate;    
+    this.currentDate = formattedDate;
   }
 
   submit(val: any): void {}
 
-
   onChangeEmail(): void {
-    if (this.email.includes('@') && this.email.includes('.com')) {
-      const emailArr = this.email.split('@');
+    const email = this.employee.email
+    if (email.includes('@') && email.includes('.com')) {
+      const emailArr = email.split('@');
+
+      //name from name@domain.com
       const name = emailArr[0];
       if (name.length < 3) {
         this.emailError = true;
